@@ -1,1 +1,5 @@
-# paros
+# PAROS: The Missing ``Puzzle'' in Smart Home Router Operating Systems
+
+The Internet of Things (IoT) devices have been increasingly deployed in smart homes for automation. Unfortunately, extensive recent research shows that external on-path adversaries can infer and fingerprint user sensitive in-home activities by analyzing IoT network traffic rates alone. Most recent traffic padding-based defending approaches cannot sufficiently protect user privacy with reasonable traffic overhead. In addition, these approaches typically assume the installation of additional hub hardware in smart homes to host their traffic padding-based defending approaches. 
+
+To address these problems, we design a new open-source traffic reshaping system---privacy as a router operating system service (PAROS) that enables smart home users to significantly reduce  private information leaked through IoT network traffic rates. PAROS does not assume the installation of any additional hardware device. We evaluate PAROS on open-source router Operating System (OS)---OpenWrt enabled virtual machine and also two real best-selling home routers. We find that PAROS can effectively prevent a wide range of state-of-the-art adversarial machine learning-based user in-home activity inference attacks, with near-zero system overhead increasing.
