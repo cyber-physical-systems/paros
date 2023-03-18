@@ -1,0 +1,678 @@
+Source-Makefile: package/firmware/ipq-wifi/Makefile
+
+Package: ipq-wifi-aruba_ap-365
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Aruba AP-365
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The Aruba AP-365 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Aruba AP-365.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-buffalo_wxr-5950ax12
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Buffalo WXR-5950AX12
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The Buffalo WXR-5950AX12 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Buffalo WXR-5950AX12.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-devolo_magic-2-wifi-next
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for devolo Magic 2 WiFi next
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The devolo Magic 2 WiFi next requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the devolo Magic 2 WiFi next.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-dynalink_dl-wrx36
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Dynalink DL-WRX36
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The Dynalink DL-WRX36 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Dynalink DL-WRX36.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-edgecore_eap102
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Edgecore EAP102
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The Edgecore EAP102 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Edgecore EAP102.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-edgecore_ecw5410
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Edgecore ECW5410
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The Edgecore ECW5410 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Edgecore ECW5410.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-edgecore_oap100
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edgecore_ecw5410
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Edgecore OAP100
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The Edgecore OAP100 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Edgecore OAP100.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-edimax_cax1800
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Edimax CAX1800
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The Edimax CAX1800 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Edimax CAX1800.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-extreme-networks_ws-ap3915i
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-edimax_cax1800
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Edgecore OAP100
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The Edgecore OAP100 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Edgecore OAP100.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-glinet_gl-a1300
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-edimax_cax1800 ipq-wifi-extreme-networks_ws-ap3915i
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for GL.iNet GL-A1300
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The GL.iNet GL-A1300 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the GL.iNet GL-A1300.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-glinet_gl-ap1300
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-edimax_cax1800 ipq-wifi-extreme-networks_ws-ap3915i ipq-wifi-glinet_gl-a1300
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for GL.iNet GL-AP1300
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The GL.iNet GL-AP1300 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the GL.iNet GL-AP1300.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-glinet_gl-s1300
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-edimax_cax1800 ipq-wifi-extreme-networks_ws-ap3915i ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for GL.iNet GL-S1300
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The GL.iNet GL-S1300 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the GL.iNet GL-S1300.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-linksys_ea8300
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-edimax_cax1800 ipq-wifi-extreme-networks_ws-ap3915i ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Linksys EA8300
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The Linksys EA8300 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Linksys EA8300.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-linksys_whw03v2
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-edimax_cax1800 ipq-wifi-extreme-networks_ws-ap3915i ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Linksys WHW03 V2
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The Linksys WHW03 V2 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Linksys WHW03 V2.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-p2w_r619ac
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-edimax_cax1800 ipq-wifi-extreme-networks_ws-ap3915i ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_whw03v2
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for P&W R619AC
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The P&W R619AC requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the P&W R619AC.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-pakedge_wr-1
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-edimax_cax1800 ipq-wifi-extreme-networks_ws-ap3915i ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_whw03v2 ipq-wifi-p2w_r619ac
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Pakedge WR-1
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The Pakedge WR-1 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Pakedge WR-1.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-qnap_301w
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-edimax_cax1800 ipq-wifi-extreme-networks_ws-ap3915i ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_whw03v2 ipq-wifi-p2w_r619ac ipq-wifi-pakedge_wr-1
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for QNAP 301w
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The QNAP 301w requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the QNAP 301w.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-qxwlan_e2600ac-c1
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-edimax_cax1800 ipq-wifi-extreme-networks_ws-ap3915i ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_whw03v2 ipq-wifi-p2w_r619ac ipq-wifi-pakedge_wr-1 ipq-wifi-qnap_301w
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Qxwlan E2600AC C1
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The Qxwlan E2600AC C1 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Qxwlan E2600AC C1.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-qxwlan_e2600ac-c2
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-edimax_cax1800 ipq-wifi-extreme-networks_ws-ap3915i ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_whw03v2 ipq-wifi-p2w_r619ac ipq-wifi-pakedge_wr-1 ipq-wifi-qnap_301w ipq-wifi-qxwlan_e2600ac-c1
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Qxwlan E2600AC C2
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The Qxwlan E2600AC C2 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Qxwlan E2600AC C2.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-redmi_ax6
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-edimax_cax1800 ipq-wifi-extreme-networks_ws-ap3915i ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_whw03v2 ipq-wifi-p2w_r619ac ipq-wifi-pakedge_wr-1 ipq-wifi-qnap_301w ipq-wifi-qxwlan_e2600ac-c1 ipq-wifi-qxwlan_e2600ac-c2
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Redmi AX6
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The Redmi AX6 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Redmi AX6.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-sony_ncp-hg100-cellular
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-edimax_cax1800 ipq-wifi-extreme-networks_ws-ap3915i ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_whw03v2 ipq-wifi-p2w_r619ac ipq-wifi-pakedge_wr-1 ipq-wifi-qnap_301w ipq-wifi-qxwlan_e2600ac-c1 ipq-wifi-qxwlan_e2600ac-c2 ipq-wifi-redmi_ax6
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Sony NCP-HG100/Cellular
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The Sony NCP-HG100/Cellular requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Sony NCP-HG100/Cellular.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-teltonika_rutx
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-edimax_cax1800 ipq-wifi-extreme-networks_ws-ap3915i ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_whw03v2 ipq-wifi-p2w_r619ac ipq-wifi-pakedge_wr-1 ipq-wifi-qnap_301w ipq-wifi-qxwlan_e2600ac-c1 ipq-wifi-qxwlan_e2600ac-c2 ipq-wifi-redmi_ax6 ipq-wifi-sony_ncp-hg100-cellular
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Teltonika RUTX
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The Teltonika RUTX requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Teltonika RUTX.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-xiaomi_ax3600
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-edimax_cax1800 ipq-wifi-extreme-networks_ws-ap3915i ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_whw03v2 ipq-wifi-p2w_r619ac ipq-wifi-pakedge_wr-1 ipq-wifi-qnap_301w ipq-wifi-qxwlan_e2600ac-c1 ipq-wifi-qxwlan_e2600ac-c2 ipq-wifi-redmi_ax6 ipq-wifi-sony_ncp-hg100-cellular ipq-wifi-teltonika_rutx
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Xiaomi AX3600
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The Xiaomi AX3600 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Xiaomi AX3600.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-xiaomi_ax9000
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-edimax_cax1800 ipq-wifi-extreme-networks_ws-ap3915i ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_whw03v2 ipq-wifi-p2w_r619ac ipq-wifi-pakedge_wr-1 ipq-wifi-qnap_301w ipq-wifi-qxwlan_e2600ac-c1 ipq-wifi-qxwlan_e2600ac-c2 ipq-wifi-redmi_ax6 ipq-wifi-sony_ncp-hg100-cellular ipq-wifi-teltonika_rutx ipq-wifi-xiaomi_ax3600
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Xiaomi AX9000
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The Xiaomi AX9000 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Xiaomi AX9000.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-zte_mf18a
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-edimax_cax1800 ipq-wifi-extreme-networks_ws-ap3915i ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_whw03v2 ipq-wifi-p2w_r619ac ipq-wifi-pakedge_wr-1 ipq-wifi-qnap_301w ipq-wifi-qxwlan_e2600ac-c1 ipq-wifi-qxwlan_e2600ac-c2 ipq-wifi-redmi_ax6 ipq-wifi-sony_ncp-hg100-cellular ipq-wifi-teltonika_rutx ipq-wifi-xiaomi_ax3600 ipq-wifi-xiaomi_ax9000
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for ZTE MF18A
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The ZTE MF18A requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the ZTE MF18A.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-zte_mf289f
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-edimax_cax1800 ipq-wifi-extreme-networks_ws-ap3915i ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_whw03v2 ipq-wifi-p2w_r619ac ipq-wifi-pakedge_wr-1 ipq-wifi-qnap_301w ipq-wifi-qxwlan_e2600ac-c1 ipq-wifi-qxwlan_e2600ac-c2 ipq-wifi-redmi_ax6 ipq-wifi-sony_ncp-hg100-cellular ipq-wifi-teltonika_rutx ipq-wifi-xiaomi_ax3600 ipq-wifi-xiaomi_ax9000 ipq-wifi-zte_mf18a
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for ZTE MF289F
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The ZTE MF289F requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the ZTE MF289F.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-zyxel_nbg7815
+Submenu: ath10k Board-Specific Overrides
+Version: 1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-aruba_ap-365 ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-devolo_magic-2-wifi-next ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edgecore_ecw5410 ipq-wifi-edgecore_oap100 ipq-wifi-edimax_cax1800 ipq-wifi-extreme-networks_ws-ap3915i ipq-wifi-glinet_gl-a1300 ipq-wifi-glinet_gl-ap1300 ipq-wifi-glinet_gl-s1300 ipq-wifi-linksys_ea8300 ipq-wifi-linksys_whw03v2 ipq-wifi-p2w_r619ac ipq-wifi-pakedge_wr-1 ipq-wifi-qnap_301w ipq-wifi-qxwlan_e2600ac-c1 ipq-wifi-qxwlan_e2600ac-c2 ipq-wifi-redmi_ax6 ipq-wifi-sony_ncp-hg100-cellular ipq-wifi-teltonika_rutx ipq-wifi-xiaomi_ax3600 ipq-wifi-xiaomi_ax9000 ipq-wifi-zte_mf18a ipq-wifi-zte_mf289f
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Zyxel NBG7815
+Maintainer: 
+Source: 
+Type: ipkg
+Description: The Zyxel NBG7815 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Zyxel NBG7815.
+
+Do not install it for any other device!
+
+@@
+
+
